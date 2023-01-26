@@ -27,6 +27,6 @@ def excluir(dicionario, usuario):
 
 
 def listar(dicionario):
-    for usuario in dicionario:
-        print(dicionario[usuario])
-
+    for usuario, dados in dicionario.items():
+        print("Login: ", usuario)
+        print("Dados:", dados)
